@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import './Styles/kangue.css'
+import './Styles/Kangue.css'
 import kangue from './assets/kangue.png'
 import Navbar from './Navbar'
 
