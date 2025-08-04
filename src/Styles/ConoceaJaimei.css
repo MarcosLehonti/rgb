@@ -1,0 +1,14 @@
+/* General wrapper que empuja el contenido por debajo del navbar */
+.jaimei-page {
+  padding-top: 60px; /* Ajusta según la altura real de tu navbar */
+}
+
+/* Las imágenes ahora son totalmente responsivas */
+.jaimei-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px; /* Espacio entre imágenes */
+  border-radius: 8px; /* Opcional: para darle un toque visual */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional */
+}
