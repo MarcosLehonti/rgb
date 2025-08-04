@@ -145,7 +145,7 @@ function Inicio() {
           </p>
           <button
                       className="btn btn-ini"
-                      onClick={() => navigate('/kangue')}
+                      onClick={() => navigate('/conoce-rgb')}
                       >
                       Saber más
             </button> 

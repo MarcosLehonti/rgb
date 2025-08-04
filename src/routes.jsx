@@ -14,7 +14,7 @@ export default function AppRoutes() {
       <Route path="/jaimei" element={<Jaimei />} />
       <Route path="/hoviu" element={<Hoviu />} />
       <Route path="/sopesarvol1" element={<Sopesar1 />} />
-      <Route path="/conoce-jaimiei" element={<ConoceaJaimei />} />
+      <Route path="/conoce-rgb" element={<ConoceaJaimei />} />
 
 
 
