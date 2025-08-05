@@ -17,7 +17,7 @@ function Kangue() {
     <Navbar/>
       {/* TÍTULO */}
 <div className="container">
-      <div class="comic-card">
+      <div class="comic-card-kangue">
         <div class="comic-image">
           <img src={kangue} alt="Portada del cómic" />
         </div>
@@ -32,7 +32,7 @@ function Kangue() {
                 </button>  
         </div>
       </div>
-        <div class="comic-card">
+        <div class="comic-card-kangue">
         <div class="comic-image">
           <img src={kangue} alt="Portada del cómic" />
         </div>

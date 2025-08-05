@@ -1,16 +1,51 @@
 
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
+import './Styles/Hoviu.css'
+import kangue from './assets/kangue.png'
+import Navbar from './Navbar'
 
 function Hoviu() {
   
-
+ const navigate = useNavigate();
   return (
-    <>
+  <>
+      <Navbar/>
       {/* TÍTULO */}
-      <h1 className="main-title">R-G-B</h1>
-
-      
+      <div className="container">
+            <div class="comic-card">
+              <div class="comic-image">
+                <img src={kangue} alt="Portada del cómic" />
+              </div>
+              <div class="comic-info">
+                <h2>Fragmentos Express Hoviu</h2>
+                <p>Esta es una breve descripción del cómic, puedes contar de qué trata o dejar un mensaje introductorio.</p>
+                <button
+                          className="btn btn-kangue"
+                          onClick={() => navigate('/fragmentosexpresshoviu')}
+                          >
+                          Saber más
+                      </button>  
+              </div>
+            </div>
+              <div class="comic-card">
+              <div class="comic-image">
+                <img src={kangue} alt="Portada del cómic" />
+              </div>
+              <div class="comic-info">
+                <h2>Título del cómic</h2>
+                <p>Esta es una breve descripción del cómic, puedes contar de qué trata o dejar un mensaje introductorio.</p>
+                <button
+                          className="btn btn-kangue"
+                          onClick={() => navigate('/')}
+                          >
+                          Saber más
+                      </button>  
+              </div>
+            </div>
+            
+      </div>
     </>
   )
 }
