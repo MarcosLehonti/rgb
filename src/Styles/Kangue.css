@@ -1,7 +1,7 @@
-.comic-card-kangue {
+.comic-card {
   display: flex;
   flex-direction: row;
-  background-color: #7a3636;
+  background-color: #8da5bf;
   color: white;
   width: 100%;
   border-radius: 10px;
