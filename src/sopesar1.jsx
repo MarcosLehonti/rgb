@@ -7,6 +7,8 @@ import img1 from '../src/assets/sopesar1/pagina1.jpg'
 import img2 from '../src/assets/sopesar1/pagina2.jpg'
 import img3 from '../src/assets/sopesar1/pagina3.jpg'
 import img4 from '../src/assets/sopesar1/pagina4.jpg'
+import Navbar from './Navbar'
+
 
 const images = [img1, img2, img3, img4]
 
@@ -22,6 +24,10 @@ function Sopesar1() {
   }
 
   return (
+    <>
+    <Navbar/>
+    
+    
     <div className="carousel-container">
 
       <div className="carousel">
@@ -38,6 +44,8 @@ function Sopesar1() {
         Página {current + 1} / {images.length}
       </div>
     </div>
+
+    </>
   )
 }
 
