@@ -6,6 +6,7 @@ import Hoviu from './Hoviu'
 import Sopesar1 from './sopesar1'
 import ConoceaJaimei from './conoceajaimei'
 import Fragmentos_Express_Hoviu from './Fragmentos_Express_Hoviu'
+import GeminiView from './GeminiView'
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,8 @@ export default function AppRoutes() {
       <Route path="/fragmentosexpresshoviu" element={<Fragmentos_Express_Hoviu />} />
 
       <Route path="/conoce-rgb" element={<ConoceaJaimei />} />
+      <Route path="/hoviu-responde" element={<GeminiView />} />
+
 
 
 

@@ -10,7 +10,8 @@ import conocenos from './assets/Conocenosrgb.jpg'
 import sobrenostros from './assets/lentes.jpg'
 import kangueins from './assets/kangueIns.jpg'
 import hoviuIns from './assets/HoviuInsta.jpg'
-import jaimeiIns from './assets/jaimeiIns.jpg'
+import jaimeiIns from './assets/jaimeiIns.jpg' 
+import HoviuResponde from './assets/HoviuPrompt.jpg'
 
 
 function Inicio() {
@@ -175,6 +176,30 @@ function Inicio() {
           
         </div>
       </div>
+
+      <div className="bottom-section">
+        <img src={HoviuResponde} alt="Descripción" className="bottom-image" />
+        <div className="bottom-text">
+          <h2>Conversa con Hoviu</h2>
+          <p>
+              Puedes conversar directamente con Hoviu y preguntarle lo que desees.  
+              Desde dudas cotidianas del día a día hasta asignaciones de la escuela o la universidad.  
+              Hoviu también puede orientarte en temas prácticos como consejos de estudio, ideas de proyectos creativos ,
+              apoyo con tareas escolares, tips de organización e incluso esas pequeñas dudas que siempre aparecen en la vida diaria.  
+              ¡Anímate a preguntar lo que quieras! Estoy aquí para acompañarte, enseñarte y facilitarte las cosas, ya sea en lo académico, 
+              en lo profesional o simplemente en lo personal.
+          </p>
+
+          <button
+                      className="btn btn-ini"
+                      onClick={() => navigate('/hoviu-responde')}
+                      >
+                      ir a conversación
+          </button>    
+          
+        </div>
+      </div>
+
 
 
             {/* SECCIÓN DE NOTAS CIRCULARES */}

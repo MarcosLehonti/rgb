@@ -1,0 +1,72 @@
+.gemini-container {
+  padding: 100px 20px 40px 20px; /* 100px de arriba, 20px a los lados, 40px abajo */
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.gemini-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #129f79;
+  font-size: 40px; /* Aumenta o disminuye este valor según quieras */
+  font-weight: bold; /* Opcional, para que se vea más destacado */
+
+}
+
+.gemini-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gemini-image {
+  width: 300px;
+  border-radius: 25%;
+}
+
+.gemini-textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.gemini-button-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gemini-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0d7559;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.gemini-button:hover {
+  background-color: #095c46;
+}
+
+.gemini-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.gemini-response {
+  margin: 20px 0; /* espacio arriba y abajo */
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  white-space: pre-wrap;
+  min-height: 80px;
+}
