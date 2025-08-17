@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Kangue from './kangue'
 import Inicio from './inicio'
 import Jaimei from './jaimei'
