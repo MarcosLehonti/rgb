@@ -10,9 +10,7 @@ import GeminiView from './GeminiView'
 
 export default function AppRoutes() {
   return (
-    <Router>
-      <Routes>
-      
+    <Routes>
       <Route path="/" element={<Inicio />} />
       <Route path="/kangue" element={<Kangue />} />
       <Route path="/jaimei" element={<Jaimei />} />
@@ -23,9 +21,12 @@ export default function AppRoutes() {
       <Route path="/conoce-rgb" element={<ConoceaJaimei />} />
       <Route path="/hoviu-responde" element={<GeminiView />} />
 
-     </Routes>
+
+
+
+
 
       
-    </Router>
+    </Routes>
   )
 }
