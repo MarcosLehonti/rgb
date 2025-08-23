@@ -3,6 +3,8 @@ import hoviuAbierto from './assets/Hoviuia.png'; // ojos abiertos
 import hoviuCerrado from './assets/Hoviuia1.png'; // ojos cerrados
 import './Styles/GeminiView.css'; // Importamos los estilos
 import Navbar from './Navbar';
+import { API_KEYS } from "../config.js";
+
 
 function GeminiView() {
   const [prompt, setPrompt] = useState('');
@@ -10,7 +12,7 @@ function GeminiView() {
   const [loading, setLoading] = useState(false);
   const [isBlinking, setIsBlinking]= useState(false);
 
-  const API_KEY = 'AIzaSyANg5Z4KSMiD8x7isvfWYnN1fg6Y2d3TY4';
+  const API_KEY = API_KEYS;
   const MODEL = 'gemini-2.0-flash';
 
  const CONTEXTO_PREDETERMINADO = `
@@ -30,6 +32,10 @@ Conoce la información de tus amigos y de ti mismo:
   - Estudia Ciencias de la COmputacion 
   - Le gusta el dinseño de Dante de devil may cry y sobre todo de la serie de netflix
   - Canción favorita : Sing me to sleep  de Alan Walker
+  - Participo en varios comics como : Fragmentos express de hoviu (el dice que le encanto
+    participar en ese comic , sobre todo por que evoca nostalgia y el poder sobrellevar 
+    los problemas de la vida), el comic esta inspirado en el Filme "Chungking Express"
+    
 
 
 - Kangue:
