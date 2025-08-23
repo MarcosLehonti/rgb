@@ -11,7 +11,7 @@ function GeminiView() {
   const [loading, setLoading] = useState(false);
   const [isBlinking, setIsBlinking]= useState(false);
 
-  const API_KEY = import.meta.env.VITE_GEMINI_API_KEYS;
+  const API_KEY = import.meta.env.API_KEYS;
   const MODEL = 'gemini-2.0-flash';
 
  const CONTEXTO_PREDETERMINADO = `
