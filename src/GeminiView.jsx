@@ -3,7 +3,6 @@ import hoviuAbierto from './assets/Hoviuia.png'; // ojos abiertos
 import hoviuCerrado from './assets/Hoviuia1.png'; // ojos cerrados
 import './Styles/GeminiView.css'; // Importamos los estilos
 import Navbar from './Navbar';
-import { API_KEYS } from "../config.js";
 
 
 function GeminiView() {
@@ -12,7 +11,7 @@ function GeminiView() {
   const [loading, setLoading] = useState(false);
   const [isBlinking, setIsBlinking]= useState(false);
 
-  const API_KEY = API_KEYS;
+  const API_KEY = import.meta.env.VITE_GEMINI_API_KEYS;
   const MODEL = 'gemini-2.0-flash';
 
  const CONTEXTO_PREDETERMINADO = `
