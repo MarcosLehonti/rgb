@@ -4,14 +4,13 @@ import hoviuCerrado from './assets/Hoviuia1.png'; // ojos cerrados
 import './Styles/GeminiView.css'; // Importamos los estilos
 import Navbar from './Navbar';
 
-
 function GeminiView() {
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
   const [isBlinking, setIsBlinking]= useState(false);
 
-  const API_KEY = import.meta.env.API_KEYS;
+  const API_KEY = 'AIzaSyANg5Z4KSMiD8x7isvfWYnN1fg6Y2d3TY4';
   const MODEL = 'gemini-2.0-flash';
 
  const CONTEXTO_PREDETERMINADO = `
@@ -85,16 +84,15 @@ Ahora responde a la siguiente consulta del usuario:
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${API_KEY}`
+            'X-goog-api-key': API_KEY
           },
           body: JSON.stringify({
-            prompt: {
-              text: CONTEXTO_PREDETERMINADO + prompt
-            }
+            contents: [
+              { parts: [{ text: CONTEXTO_PREDETERMINADO + prompt }] }
+            ]
           })
         }
       );
-
 
       const data = await res.json();
       setResponse(data?.candidates?.[0]?.content?.parts?.[0]?.text || 'No se obtuvo respuesta.');
