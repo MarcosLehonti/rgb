@@ -85,15 +85,16 @@ Ahora responde a la siguiente consulta del usuario:
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-goog-api-key': API_KEY
+            'Authorization': `Bearer ${API_KEY}`
           },
           body: JSON.stringify({
-            contents: [
-              { parts: [{ text: CONTEXTO_PREDETERMINADO + prompt }] }
-            ]
+            prompt: {
+              text: CONTEXTO_PREDETERMINADO + prompt
+            }
           })
         }
       );
+
 
       const data = await res.json();
       setResponse(data?.candidates?.[0]?.content?.parts?.[0]?.text || 'No se obtuvo respuesta.');
